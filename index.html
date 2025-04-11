@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С Днём Рождения!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: linear-gradient(to right, #ffe3e3, #ffd6f6);
+      --text-color: #333;
+      --accent-color: #ff69b4;
+      --quote-color: #aa336a;
+      --footer-color: #777;
+      --card-shadow: rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--main-bg);
+      color: var(--text-color);
+      text-align: center;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin: 30px 10px 20px;
+      color: var(--accent-color);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .section {
+      padding: 40px 20px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.3em;
+      margin-top: 30px;
+      color: var(--quote-color);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+  
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(4px);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px var(--card-shadow);
+      width: 280px;
+      margin: 15px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+      text-align: left;
+      display: inline-block;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.5em;
+      color: #222;
+      margin-bottom: 10px;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #333;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+    }
+
+    .video iframe {
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: var(--footer-color);
+    }
+
+  
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .quote {
+        font-size: 1em;
+      }
+
+      .section {
+        padding: 25px 10px;
+      }
+
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+        margin: 10px 0;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
+
+   
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+   
+    @media (prefers-color-scheme: dark) {
+      body {
+        --main-bg: linear-gradient(to right, #2c2c2c, #3b2c3f);
+        --text-color: #eee;
+        --accent-color: #ff94d8;
+        --quote-color: #f2a3d3;
+        --footer-color: #aaa;
+      }
+
+      .card {
+        background: rgba(40, 40, 40, 0.9);
+      }
+
+      .card h3, .card p {
+        color: #ff69b4;
+        text-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>С Днём Рождения, Кудряж!</h1>
+
+  <div class="section">
+    <p>"Кудри, с днём рождения тебя! Желаю тебе наилучшего и красивейшего в этом мире, ведь красота твоя, Кудряж, восхитительна, как и твоя душа и сердце 😍 Свети ярче всех звёзд, просто живя в этом мире. Лублу тебя, твой Еж 🦔"</p>
+    <p class="quote">"Живи так, будто весь мир создан для тебя!"</p>
+    <br>
+    <p>P.S. Извини за такой себе сайт — мало было времени 😞</p>
+  </div>
+
+  <div class="section">
+    <h2>Фото красавицы 😍</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="кудри1.jpg" alt="Фото 1">
+        <h3>Первое Чудо </h3>
+        <p> Семен уақыт тез өтеді 🥰</p>
+      </div>
+      <div class="card">
+        <img src="кудри2.jpg" alt="Фото 2">
+        <h3>Второе Чудо </h3>
+        <p>Саған қалай сынбайсын?! 😍</p>
+      </div>
+      <div class="card">
+        <img src="кудри3.jpg" alt="Фото 3">
+        <h3>Третье Чудо</h3>
+        <p>Сенің сұлулығынды бағалауға болмайды ✨</p>
+      </div>
+      <div class="card">
+        <img src="кудри4.jpg" alt="Фото 4">
+        <h3>Четвертое Чудо</h3>
+        <p>Лублу тебя Кудри 💖</p>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <div class="section">
+    <iframe width="0" height="0" src="" frameborder="0" allow="autoplay"></iframe>
+  </div>
+  <div class="section">
+    <h2>💌 Открытка-сюрприз</h2>
+    <div class="card" style="max-width: 400px; margin: 0 auto;">
+      <h3>Тайное послание от Ежика</h3>
+      <p>Нажми на кнопочку ниже 👇</p>
+      <button onclick="showSurprise()" style="padding: 10px 20px; font-size: 1em; background-color: #ff69b4; border: none; border-radius: 8px; color: white; cursor: pointer;">Открыть 💖</button>
+      <div id="surpriseText" style="display: none; margin-top: 20px; font-size: 1.2em; color: #aa336a; animation: fadeInUp 1s ease;">
+        Кудряж, знай, ты один из моих самых близких людей!  💞<br>
+        Ты делаешь этот мир ярче просто тем, что в нём есть! 🌟<br>
+        Лублу тебя бесконечно 💗 — твой Еж 🦔
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function showSurprise() {
+      document.getElementById('surpriseText').style.display = 'block';
+    }
+  </script>
+
+  <footer>
+    Сделано лапкой ёжика 💖🦔<br />
+    © Твой Ежик
+  </footer>
+
+</body>
+</html>
